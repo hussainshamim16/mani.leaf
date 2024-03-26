@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Tenor Sans", sans-serif;
+    
+}
+
+:root{
+    --drack : #56960e;
+    --light :  #2b4b04;
+    --extra : rgba(54, 87, 10, 0.863);   
+}
+section{
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 40px;
+
+    color: var(--light);
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    
+}
+header ul li{
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+header ul li:hover{
+    color: #5eac00;
+    
+}
+header h1{
+    cursor: pointer;
+    transition: 0.1s;
+}
+header h1:hover{
+    color: #5eac00;
+    
+}
+
+div.sectwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+padding: 40px;
+
+
+}
+div.three{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    height: 70vh;
+padding: 40px;
+
+
+}
+
+.images img{
+   width: 400px;
+   margin-right: 30px;
+   filter: drop-shadow(0px 0px 10px  #00000042);
+}
+.text i{
+  font-size: 20px;
+  margin-right: 10px;
+
+  color: #458a00;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.text i:hover{
+color: #102000;
+}
+
+.text {
+    
+}
+.text h1{
+    color: var(--drack);
+    letter-spacing: 4px;
+    font-size: 50px;
+    font-weight: bold;
+    
+    
+}
+.text p{
+    color: var(--extra);
+
+    font-size: 17px;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    
+}
+.text a{
+    color: white;
+    background-color:var(--light);
+font-weight: 800;
+text-decoration: none;
+    
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+
+    transition-duration: 0.5s;
+    margin-right: 20px;
+    
+}
+
+.text a:hover{
+    background-color: var(--drack);
+
+}
+
+footer{
+    background-color: #5eac00;
+    text-align: center;
+    padding: 2px;
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    header{
+        flex-direction: column;
+        line-height: 2;
+    }
+    header ul li{
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    div.sectwo{
+        flex-direction: column;
+        height: auto;
+    }
+    div.three{
+        flex-direction: column;
+        height: auto;
+    }
+    .images img{
+        width: 300px;
+    }
+    footer{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:800px){
+
+}
